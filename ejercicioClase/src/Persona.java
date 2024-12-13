@@ -40,7 +40,12 @@ public abstract class Persona {
         return
             " Hola mi nombre es " + nombre + "" +
             "y mi edad es de" + edad +" años" ;
-            
     }
-    
+     @Override
+    public String toString() {
+        return "{" +
+            " nombre='" + getNombre() + "'" +
+            ", edad='" + getEdad() + "'" +
+            "}";
+    }
 }
