@@ -1,3 +1,7 @@
+/**
+ * @author emsantamaria
+ * @version 1.0.0
+ */
 import java.util.Objects;
 /**
  * @author emsantamaria
