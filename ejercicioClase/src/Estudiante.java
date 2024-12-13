@@ -1,3 +1,7 @@
+/**
+ * @author emsantamaria
+ * @version 1.0.0
+ */
 public class Estudiante extends Persona {
     private String matricula;
     /**
