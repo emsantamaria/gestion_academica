@@ -72,5 +72,12 @@ public class Curso {
             ", estudiantes:'" + getEstudiantes() + "'" +
             "}";
     }
-    
+    @Override
+    public String toString() {
+        return "{" +
+            " nombre='" + getNombre() + "'" +
+            ", codigo='" + getCodigo() + "'" +
+            ", estudiantes='" + getEstudiantes() + "'" +
+            "}";
+    }
 }
