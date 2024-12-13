@@ -31,9 +31,11 @@ public class Estudiante extends Persona {
     }
      @Override
     public String toString() {
-        return "{" +
-            " matricula='" + getMatricula() + "'" +
-            "}";
+         return "{" +
+            " matricula='" + getMatricula() + "'" + 
+             "'/nombre='" + getNombre()+"'/edad='"+
+            getEdad()+
+            "''}";
     }
 
 }
