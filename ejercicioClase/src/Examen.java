@@ -11,10 +11,7 @@ public class Examen {
     }
     /**
      * Constructor con parametros
-     * @param diaExamen
-     * @param mesExamen
-     * @param anioExamen
-     * @return
+     * @param fecha
      */
     public Examen(Fecha fecha){
         this.fecha = fecha;
@@ -44,10 +41,4 @@ public class Examen {
             " fecha='" + fecha + "'" +
             "}";
     }
-public static void main(String[] args) {
-    Fecha fecha=new Fecha();
-    Examen examen=new Examen(fecha);
-    examen.programarFecha(1, 12, 2020);
-    System.out.println(examen);
-}
 }
