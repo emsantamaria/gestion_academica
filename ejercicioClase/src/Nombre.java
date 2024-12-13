@@ -1,3 +1,7 @@
+/**
+ * @author emsantamaria
+ * @version 1.0.0
+ */
 public class Nombre {
     private String nombre;
     private String apellido1;
