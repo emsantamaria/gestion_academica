@@ -4,8 +4,8 @@ import java.util.List;
  * @version 1.0.0
  */
 public class Biblioteca {
-    private String nombre;
-    private List<Libro>libros;
+    private static String nombre;
+    private static List<Libro>libros;
     /**
      * Constructor por defecto
      */
@@ -31,16 +31,24 @@ public class Biblioteca {
     public void setLibros(List<Libro> libros) {
         this.libros = libros;
     }
-    public String listarLibros() {
+    static public String listarLibros() {
         return "{" +
             ", libros='" + getLibros() + "'" +
             "}";
     }
-    public boolean registrarLibro(Libro libro, List<Libro>libros){
+    static public boolean registrarLibro(Libro libro, List<Libro>libros){
         if(libro==null){
             return false;
         }
+        if(libros==null){
+                return false;
+        }
         libros.add(libro);
         return true;
+    }
+    @Override
+    public String toString() {
+        return "{" +nombre+libros+
+            "}";
     }
 }
