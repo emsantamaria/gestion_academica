@@ -29,4 +29,11 @@ public class Profesor extends Persona{
     public String enseniar() {
         return "JUJUJU ensenio jujuju" ;  
     }
+    @Override
+    public String toString() {
+        return "{" +
+            " especialidad='" + getEspecialidad() + "'/nombre='" + getNombre()+"'/edad='"+
+            getEdad()+
+            "''}";
+    }
 }
