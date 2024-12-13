@@ -52,6 +52,10 @@ public class Materia {
         return Objects.equals(codigo, materia.codigo);
     }
     public String accederADetalles() {
+        return toString();
+    }
+ @Override
+    public String toString() {
         return "{" +
             " nombre='" + getNombre() + "'" +
             ", codigo='" + getCodigo() + "'" +
