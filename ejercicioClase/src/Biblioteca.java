@@ -12,8 +12,17 @@ public class Biblioteca {
     public Biblioteca() {
     }
     public Biblioteca(String nombre, List<Libro>libros) {
-        this.nombre = nombre;
-        this.libros = libros;
+        if(nombre==null){
+            this.nombre="";
+        }else{
+            this.nombre = nombre;
+        }
+         if(libros==null){
+             this.libros=new ArraysList<>();
+         }
+        else{
+            this.libros = libros;
+        }
     }
 
     public String getNombre() {
@@ -39,9 +48,6 @@ public class Biblioteca {
     static public boolean registrarLibro(Libro libro, List<Libro>libros){
         if(libro==null){
             return false;
-        }
-        if(libros==null){
-                return false;
         }
         libros.add(libro);
         return true;
