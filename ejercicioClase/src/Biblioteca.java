@@ -1,5 +1,8 @@
 import java.util.List;
-
+/**
+ * @author emsantamaria
+ * @version 1.0.0
+ */
 public class Biblioteca {
     private String nombre;
     private List<Libro>libros;
