@@ -1,3 +1,7 @@
+/**
+ * @author emsantamaria
+ * @version 1.0.0
+ */
 public abstract class Persona {
     private Nombre nombre;
     private int edad;
