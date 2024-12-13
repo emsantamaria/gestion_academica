@@ -10,6 +10,9 @@ public class Estudiante extends Persona {
     public Estudiante() {
         super();
     }
+    /**
+     *Constructor con parametros
+     */
     public Estudiante(String matricula, Nombre nombre, int edad) {
         super(nombre, edad);
         this.matricula = matricula;
@@ -26,4 +29,11 @@ public class Estudiante extends Persona {
         return "{ Estoy estudiando " + 
             "}";
     }
+     @Override
+    public String toString() {
+        return "{" +
+            " matricula='" + getMatricula() + "'" +
+            "}";
+    }
+
 }
