@@ -25,9 +25,22 @@ public class Curso {
      * @param estudiantes
      */
     public Curso(String nombre, String codigo, List<Estudiante>estudiantes){
-        this.nombre = nombre;
-        this.codigo = codigo;
-        this.estudiantes =estudiantes;
+        if(nombre==null){
+            this.nombre="";
+        }else{
+            this.nombre = nombre;
+        }
+        if(codigo==null){
+            this.codigo=null;
+        }else{
+            this.codigo = codigo;
+        }
+        if(estudiantes==null){
+            this.estudiantes=new ArrayList<>();
+        }
+        else{
+            this.estudiantes =estudiantes;
+        }
     }
 
     public String getNombre() {
